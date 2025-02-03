@@ -2,13 +2,13 @@
 
 import { useState } from 'react';
 
-export default function SignIn() {
+export default function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-    // Handle sign-in logic here (e.g., API call to authenticate user)
+    // Handle signup logic here (e.g., API call to register user)
     console.log('Email:', email);
     console.log('Password:', password);
   };
@@ -16,7 +16,7 @@ export default function SignIn() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-8">
       <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Sign In</h2>
+        <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Sign Up</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-gray-700">
@@ -51,15 +51,15 @@ export default function SignIn() {
               type="submit"
               className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              Sign In
+              Sign Up
             </button>
           </div>
         </form>
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">
-            Don&apos;t have an account?{' '}
-            <a href="/signup" className="font-medium text-indigo-600 hover:text-indigo-500">
-              Sign up
+            Already have an account?{' '}
+            <a href="/signin" className="font-medium text-indigo-600 hover:text-indigo-500">
+              Log in
             </a>
           </p>
         </div>

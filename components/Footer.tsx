@@ -10,7 +10,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="text-blue-400 hover:underline"
         >
-          Your Name
+        Ethan Malik
         </a>
       </p>
     </footer>

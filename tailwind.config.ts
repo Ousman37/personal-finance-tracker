@@ -9,8 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#2563eb", // A deep blue for branding
+        secondary: "#facc15", // A warm yellow for contrast
+        accent: "#14b8a6", // A fresh teal for highlights
+        background: "#f5f5f5", // Light gray for soft backgrounds
+        foreground: "#1f2937", // Dark gray for readable text
+        card: "#ffffff", // White cards for a clean UI
+        border: "#e5e7eb", // Subtle border colors
       },
     },
   },

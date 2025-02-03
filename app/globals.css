@@ -2,44 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
 body {
-  font-family: Arial, sans-serif;
+  @apply font-sans bg-gradient-to-br from-primary to-accent text-foreground;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
 }
 
+
+/* Header styles */
 header {
-  background-color: #0070f3;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+  @apply bg-primary text-white py-4 text-center;
 }
 
+/* Main content */
 main {
-  padding: 2rem;
+  @apply p-8;
 }
 
+/* Footer */
 footer {
-  background-color: #0070f3;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  @apply bg-primary text-white text-center py-4 fixed bottom-0 w-full;
 }
 
+/* Buttons */
 button {
-  background-color: #0070f3;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 4px;
+  @apply bg-primary text-white border-none px-4 py-2 cursor-pointer rounded-md transition duration-200;
 }
 
 button:hover {
-  background-color: #005bb5;
+  @apply bg-blue-700; /* Darker blue for hover */
 }
